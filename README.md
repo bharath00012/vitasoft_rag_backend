@@ -81,7 +81,7 @@ vitasoft_rag/
 - **Node.js** `>= 18.x`
 - **Python** `>= 3.8` (required by ChromaDB)
 - **MongoDB** running locally or a MongoDB Atlas URI
-- **ChromaDB** server running locally
+- **ChromaDB** server running locally 
 - **OpenAI API Key**
 
 ---
@@ -90,7 +90,7 @@ vitasoft_rag/
 
 ```bash
 pip install chromadb
-chroma run --host localhost --port 8000
+chroma run --host localhost --port 8000 or docker run -p 8000:8000 chromadb/chroma
 ```
 
 ### 2. Start MongoDB
@@ -463,8 +463,5 @@ PORT=5000
 
 # CORS
 FRONTEND_URL=http://localhost:3000
-
-# Chunking (optional overrides)
-CHUNK_SIZE=500
-CHUNK_OVERLAP=50
 ```
+
